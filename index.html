@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ASU MCTA Seniors 2027 digital gallery">
+    <title>ASU.MCTA.2027.Seniors</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="hero" id="top">
+        <div class="hero-grid"></div>
+
+        <nav class="top-bar">
+            <a class="brand" href="#top">ASU.MCTA.2027.Seniors</a>
+            <a class="nav-button" href="#seniors">Browse Seniors</a>
+        </nav>
+
+        <div class="hero-content">
+            <p class="eyebrow">Ain Shams University · Faculty of Engineering</p>
+            <h1>ASU.MCTA.2027.Seniors</h1>
+            <p class="hero-text">
+                Mechatronics seniors gallery. Search by name or ID and open each senior profile.
+            </p>
+
+            <a class="hero-button" href="#gallery">Explore the Class</a>
+        </div>
+
+        <div class="hero-lines" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <section class="section group-section" id="gallery">
+            <div class="section-heading">
+                <div>
+                    <p class="section-kicker">Class moments</p>
+                    <h2>Group Photos</h2>
+                </div>
+
+                <div class="slider-controls">
+                    <button class="round-button" id="previousPhoto" aria-label="Previous group photo">←</button>
+                    <button class="round-button" id="nextPhoto" aria-label="Next group photo">→</button>
+                </div>
+            </div>
+
+            <div class="photo-slider" id="photoSlider">
+                <button class="group-photo" data-full="images/groups/group-1.jpg" aria-label="Open group photo 1">
+                    <img src="images/groups/group-1.jpg" alt="Group photo 1">
+                </button>
+
+                <button class="group-photo" data-full="images/groups/group-2.jpg" aria-label="Open group photo 2">
+                    <img src="images/groups/group-2.jpg" alt="Group photo 2">
+                </button>
+
+                <button class="group-photo" data-full="images/groups/group-3.jpg" aria-label="Open group photo 3">
+                    <img src="images/groups/group-3.jpg" alt="Group photo 3">
+                </button>
+
+                <button class="group-photo" data-full="images/groups/group-4.jpg" aria-label="Open group photo 4">
+                    <img src="images/groups/group-4.jpg" alt="Group photo 4">
+                </button>
+            </div>
+        </section>
+
+        <section class="section senior-section" id="seniors">
+            <div class="section-heading senior-heading">
+                <div>
+                    <p class="section-kicker">Senior directory</p>
+                    <h2>Find a Senior</h2>
+                </div>
+
+                <p class="result-count" id="resultCount">0 seniors</p>
+            </div>
+
+            <div class="search-shell">
+                <span class="search-icon" aria-hidden="true">⌕</span>
+                <input
+                    id="searchInput"
+                    type="search"
+                    placeholder="Search by name or ID"
+                    autocomplete="off"
+                    aria-label="Search seniors by name or ID"
+                >
+                <button id="clearSearch" class="clear-search" type="button">Clear</button>
+            </div>
+
+            <div class="students-grid" id="studentsGrid"></div>
+
+            <div class="empty-state" id="emptyState" hidden>
+                <h3>No senior found</h3>
+                <p>Try another name or ID.</p>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal" id="studentModal" aria-hidden="true">
+        <button class="modal-backdrop" data-close-modal aria-label="Close senior profile"></button>
+
+        <article class="profile-panel" role="dialog" aria-modal="true" aria-labelledby="modalName">
+            <button class="close-button" data-close-modal aria-label="Close">×</button>
+
+            <div class="profile-photo-wrap">
+                <img id="modalPhoto" src="" alt="">
+            </div>
+
+            <div class="profile-content">
+                <p class="profile-label">Senior profile</p>
+                <h2 id="modalName"></h2>
+                <p class="profile-id" id="modalId"></p>
+
+                <blockquote id="modalQuote"></blockquote>
+
+                <div class="speech-block">
+                    <h3>Message</h3>
+                    <p id="modalSpeech"></p>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <button class="modal-backdrop" data-close-lightbox aria-label="Close group photo"></button>
+        <button class="close-button lightbox-close" data-close-lightbox aria-label="Close">×</button>
+        <img id="lightboxImage" src="" alt="Expanded group photo">
+    </div>
+
+    <script src="students.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
