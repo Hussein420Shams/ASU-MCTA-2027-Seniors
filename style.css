@@ -1076,3 +1076,83 @@ body.modal-open {
         transition-duration: 0.01ms !important;
     }
 }
+
+#modalPhoto {
+    cursor: zoom-in;
+}
+
+.lightbox {
+    z-index: 30;
+}
+
+.lightbox-content {
+    position: relative;
+    z-index: 1;
+
+    width: min(1200px, 100%);
+    max-width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 14px;
+}
+
+.lightbox .lightbox-content img {
+    width: auto;
+    max-width: 100%;
+    max-height: calc(88dvh - 72px);
+    margin: 0 auto;
+
+    object-fit: contain;
+    object-position: center;
+}
+
+.download-image-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 48px;
+    padding: 0 24px;
+
+    border: 1px solid rgba(143, 213, 255, 0.5);
+    border-radius: 14px;
+
+    color: white;
+    background: linear-gradient(135deg, #167fbe, #2aa9ff);
+
+    text-decoration: none;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition:
+        transform 180ms ease,
+        filter 180ms ease;
+}
+
+.download-image-button:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.08);
+}
+
+@media (max-width: 620px) {
+
+    .lightbox-content {
+        width: 100%;
+        gap: 12px;
+    }
+
+    .lightbox .lightbox-content img {
+        width: auto;
+        max-width: 100%;
+        max-height: calc(80dvh - 68px);
+    }
+
+    .download-image-button {
+        width: 100%;
+        max-width: 260px;
+    }
+}
