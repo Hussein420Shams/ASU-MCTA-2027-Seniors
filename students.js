@@ -96,12 +96,12 @@ const students = [
         speech: ""
     },
     {
-        preferredName: "",
+        preferredName: "Mazen",
         name: "Mazen Ehab Mohamed",
         id: "23P0041",
-        photo: "images/students/sample-student.png",
-        quote: "",
-        speech: ""
+        photo: "images/students/23P0041.png",
+        quote: "يا رفاعي",
+        speech: "الثقة فالله نجاح"
     },
     {
         preferredName: "",
