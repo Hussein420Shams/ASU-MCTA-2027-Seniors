@@ -100,8 +100,8 @@ const students = [
         name: "Mazen Ehab Mohamed",
         id: "23P0041",
         photo: "images/students/23P0041.png",
-        quote: "يا رفاعي",
-        speech: "الثقة فالله نجاح"
+        quote: "",
+        speech: ""
     },
     {
         preferredName: "",
