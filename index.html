@@ -9,7 +9,7 @@
     <link rel="icon" type="image/png" href="favicon.png?v=2">
     <link rel="apple-touch-icon" href="favicon.png?v=2">
 
-    <link rel="stylesheet" href="style.css?v=7">
+    <link rel="stylesheet" href="style.css?v=12">
 </head>
 <body>
 
@@ -78,6 +78,30 @@
                 <button class="group-photo" data-full="images/groups/group-4.jpg" aria-label="Open group photo 4">
                     <img src="images/groups/group-4.jpg" alt="Group photo 4">
                 </button>
+                
+                <button class="group-photo" data-full="images/groups/group-5.jpg" aria-label="Open group photo 5">
+                    <img src="images/groups/group-5.jpg" alt="Group photo 5">
+                </button>
+                
+                <button class="group-photo" data-full="images/groups/group-6.jpg" aria-label="Open group photo 6">
+                    <img src="images/groups/group-6.jpg" alt="Group photo 6">
+                </button>
+
+                <button class="group-photo" data-full="images/groups/group-7.jpg" aria-label="Open group photo 7">
+                    <img src="images/groups/group-7.jpg" alt="Group photo 7">
+                </button>
+
+                <button class="group-photo" data-full="images/groups/group-8.jpg" aria-label="Open group photo 8">
+                    <img src="images/groups/group-8.jpg" alt="Group photo 8">
+                </button>
+                
+                <button class="group-photo" data-full="images/groups/group-9.jpg" aria-label="Open group photo 9">
+                    <img src="images/groups/group-9.jpg" alt="Group photo 9">
+                </button>
+                
+                <button class="group-photo" data-full="images/groups/group-10.jpg" aria-label="Open group photo 10">
+                    <img src="images/groups/group-10.jpg" alt="Group photo 10">
+                </button>
             </div>
         </section>
 
@@ -87,8 +111,18 @@
                     <p class="section-kicker">Senior directory</p>
                     <h2>Find a Senior</h2>
                 </div>
+            
+                <div class="senior-actions">
+                    <p class="result-count" id="resultCount">0 seniors</p>
+                    
+                    <button
+                    id="randomSeniorButton"
+                    class="random-senior-button"
+                    type="button">
+                    Random Senior
+                </button>
+            </div>
 
-                <p class="result-count" id="resultCount">0 seniors</p>
             </div>
 
             <div class="search-shell">
@@ -125,6 +159,7 @@
             <div class="profile-content">
                 <p class="profile-label">Senior profile</p>
                 <h2 id="modalName"></h2>
+                <p class="profile-full-name" id="modalFullName"></p>
                 <p class="profile-id" id="modalId"></p>
 
                 <blockquote id="modalQuote"></blockquote>
@@ -138,42 +173,65 @@
     </div>
 
     <div class="lightbox" id="lightbox" aria-hidden="true">
-
-    <button
-        class="modal-backdrop"
-        type="button"
-        data-close-lightbox
-        aria-label="Close image">
-    </button>
-
-    <button
-        class="close-button lightbox-close"
-        type="button"
-        data-close-lightbox
-        aria-label="Close image">
-        ×
-    </button>
-
-    <div class="lightbox-content">
-
-        <img
-            id="lightboxImage"
-            src=""
-            alt="Expanded image"
-        >
-
         <button
-        id="lightboxDownload"
-        class="download-image-button"
-        type="button">
-        Download Image
+            class="modal-backdrop"
+            type="button"
+            data-close-lightbox
+            aria-label="Close image">
         </button>
 
+        <button
+            class="close-button lightbox-close"
+            type="button"
+            data-close-lightbox
+            aria-label="Close image">
+            ×
+        </button>
+
+        <button
+            id="lightboxPrevious"
+            class="lightbox-nav lightbox-nav-previous"
+            type="button"
+            aria-label="Previous image"
+            hidden>
+            ←
+        </button>
+
+        <div class="lightbox-content">
+            <div class="lightbox-image-stage">
+                <img
+                    id="lightboxImage"
+                    src=""
+                    alt="Expanded image"
+                >
+
+                <img
+                    id="lightboxIncomingImage"
+                    src=""
+                    alt=""
+                    aria-hidden="true"
+                >
+            </div>
+
+            <button
+                id="lightboxDownload"
+                class="download-image-button"
+                type="button">
+                Download Image
+            </button>
+        </div>
+
+        <button
+            id="lightboxNext"
+            class="lightbox-nav lightbox-nav-next"
+            type="button"
+            aria-label="Next image"
+            hidden>
+            →
+        </button>
     </div>
 
-</div>
-
-    <script src="students.js"></script>
-    <script src="script.js?v=3"></script>
+    <script src="students.js?v=3"></script>
+    <script src="script.js?v=12"></script>
 </body>
 </html>
