@@ -12,7 +12,7 @@ const students = [
         name: "Hussein Mohammed Shams El-Din",
         id: "23P0004",
         photo: "images/students/sample-student.png",
-        quote: "A",
+        quote: "",
         speech: ""
     },
     {
