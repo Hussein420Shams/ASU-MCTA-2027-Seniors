@@ -513,7 +513,7 @@ const students = [
     },
     {
         preferredName: "",
-        name: "Ahmad Hatem Mahmoud Mohammed Sayme Ahmed",
+        name: "Ahmad Hatem Mahmoud",
         id: "23P0322",
         photo: "images/students/sample-student.png",
         quote: "",
