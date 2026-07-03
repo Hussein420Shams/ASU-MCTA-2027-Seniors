@@ -600,12 +600,12 @@ const students = [
         speech: ""
     },
     {
-        preferredName: "",
-        name: "Mohamed Ali Mohamed",
+        preferredName: "الجعجوصي",
+        name: "Mohamed Ali Mohamed Ali Geasa",
         id: "23P0366",
-        photo: "images/students/sample-student.png",
-        quote: "",
-        speech: ""
+        photo: "images/students/23P0366.png",
+        quote: "على راي دكتورنا ايمن الكينج، متضغطش عليا عشان بزمر... ",
+        speech: "هتوحشني كل اللحظات الحلوه الي عديت بيها اوي.\nاخرفطاري مع علام من شارع عشره والقهوه الفرنساوي من شجره البن البرازيلي. والواد مصطفى المريح والبيات معاه هو والعبد في الشقه ونجيب غدا ونقعد نضحك ونهزر. زمايلي في المنحه كلهم هيوحشوني.\nاخر حاجه عايز اقولها \nينضااا الريبورت فين ينضااا"
     },
     {
         preferredName: "",
@@ -636,7 +636,7 @@ const students = [
         name: "Habiba Mohamed El-Sharkawy",
         id: "23P0380",
         photo: "images/students/23P0380.png",
-        quote: "You owe it to yourself to continue",
+        quote: "You owe it to yourself to continue.",
         speech: "I will miss every moment of college the joys and the hardships alike.\nI will miss the laughter, the struggles, and the memories we created side by side.\nThese days will forever hold a special place in my heart  ):"
     },
     {
