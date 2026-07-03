@@ -637,7 +637,7 @@ const students = [
         id: "23P0380",
         photo: "images/students/23P0380.png",
         quote: "",
-        speech: "I will miss every moment of college—the joys and the hardships alike.\nI will miss the laughter, the struggles, and the memories we created side by side.\nThese days will forever hold a special place in my heart  ):"
+        speech: "I will miss every moment of college the joys and the hardships alike.\nI will miss the laughter, the struggles, and the memories we created side by side.\nThese days will forever hold a special place in my heart  ):"
     },
     {
         preferredName: "",
