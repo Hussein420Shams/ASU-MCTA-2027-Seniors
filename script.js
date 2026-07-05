@@ -1387,4 +1387,68 @@ randomSeniorButton.addEventListener(
     }
 );
 
+const backToTopButton =
+    document.getElementById("backToTop");
+
+function updateBackToTopButton() {
+    const scrollPosition =
+        window.scrollY ||
+        document.documentElement.scrollTop;
+
+    const scrollableHeight =
+        document.documentElement.scrollHeight -
+        window.innerHeight;
+
+    const progress =
+        scrollableHeight > 0
+            ? scrollPosition /
+              scrollableHeight
+            : 0;
+
+    const safeProgress = Math.min(
+        Math.max(progress, 0),
+        1
+    );
+
+    backToTopButton.style.setProperty(
+        "--scroll-progress",
+        `${safeProgress * 100}%`
+    );
+
+    backToTopButton.classList.toggle(
+        "is-visible",
+        scrollPosition > 400
+    );
+
+    backToTopButton.classList.toggle(
+        "is-complete",
+        safeProgress >= 0.995
+    );
+}
+
+window.addEventListener(
+    "scroll",
+    updateBackToTopButton,
+    {
+        passive: true
+    }
+);
+
+window.addEventListener(
+    "resize",
+    updateBackToTopButton
+);
+
+backToTopButton.addEventListener(
+    "click",
+    () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
+);
+
+updateBackToTopButton();
+
 renderStudents(students);
