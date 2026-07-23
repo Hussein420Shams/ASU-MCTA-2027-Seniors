@@ -582,9 +582,9 @@ const students = [
         photo: "images/students/23P0362.png",
         quote: "Keep trying, even after the thousandth time.🐌🪐✨",
         speech: `Grateful for every lesson i have learnt from you ASU👉👈.........
-Every friendship, challlenge that shaped who i am today.
-waiting for
-"الحجات اللي هلاقيها في عقلي الباطن بعد التخرج زي ما دكتورتامر قالناا"`
+        Every friendship, challlenge that shaped who i am today.
+        Waiting for
+        "الحجات اللي هلاقيها في عقلي الباطن بعد التخرج زي ما دكتورتامر قالناا"`
     },
     {
         preferredName: "",
