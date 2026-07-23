@@ -583,7 +583,8 @@ const students = [
         quote: "Keep trying, even after the thousandth time.🐌🪐✨",
         speech: `Grateful for every lesson i have learnt from you ASU👉👈.........
 Every friendship, challlenge that shaped who i am today.
-waiting for "الحجات اللي هلاقيها في عقلي الباطن بعد التخرج زي ما دكتورتامر قالناا"`
+waiting for
+"الحجات اللي هلاقيها في عقلي الباطن بعد التخرج زي ما دكتورتامر قالناا"`
     },
     {
         preferredName: "",
